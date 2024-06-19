@@ -1,0 +1,14 @@
+:root{
+    /* establecemos variables para los colores */
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #2d8f85;
+    --clr-5: #637c54;
+}
+.card{
+    height: 100px;
+    background-color: var(--clr-1);
+    border-radius: 5px;
+    position: relative;
+}
