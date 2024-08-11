@@ -47,6 +47,11 @@ h2{
     font-size: 24px;
     font-family: poppins-bold;
 }
+h3{
+    color: white;
+    font-size: 20px;
+    font-family: poppins-bold;
+}
 /* ANIMACIÓN DE FONDO */
 .animated-bg {
     position: absolute;
@@ -495,7 +500,7 @@ h2{
 .upright-1, .upright-2{
     width: 1px;
     height: 60%;
-    left: 99px;
+    left: 119px;
     margin-top: 5px;
     position: absolute;
     border: 1px solid #047ae0;
@@ -509,7 +514,7 @@ h2{
 }
 
 .item-fecha{
-    width: 80px;
+    width: 100px;
 }  
 .item-fecha .year-title{
     font-size: 12px;
@@ -531,7 +536,7 @@ h2{
 
 
 .item-info{
-    width: 252px;
+    width: 270px;
 }
 
 .item-info .info-title{
