@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1250px), only screen and (max-height: 800px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .ctn-menu{
+        border-radius: 0 20px 20px 0;
+    }
+    .ctn-info{
+        border-radius: 0;
+    }
+}
+@media only screen and (max-width: 1150px), only screen and (max-height: 720px) {
+    .container{
+        flex-direction: row-reverse;
+        position: relative;
+        justify-content: center;
+    }
+    .ctn-menu {
+        border-radius: 0;
+        position: absolute;
+        justify-content: start;
+        right: 0;
+        width: 250px;
+        display: none;
+    }
+    .ctn-menu-responsive{
+        display: flex !important;
+    }
+    .ctn-info{
+        width: 100%;
+    }
+    .ctn-img-redes{
+        height: 30%;
+    }
+    .ctn-submenu{
+        height: 55%;
+    }
+}

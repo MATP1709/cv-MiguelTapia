@@ -80,16 +80,12 @@ h3{
 /* FIN DE ANIMACIÓN DE FONDO */
 .container{
     display: flex;
-    align-items: center;
-    /* height: 100vh; */
+    align-items: center;    
     width: 1200px;
     min-height: 80vh;
-    /* min-height: 750px;
-    max-height: 750px; */
     height: 750px;
     border-radius: 20px;
     background-color: #111E31;
-    /* box-shadow: 0px 0px 15px #0b0b55; */
     box-shadow: 0px 0px 10px black;
     overflow: hidden;
 }
@@ -103,13 +99,10 @@ h3{
     padding: 30px 20px;
     width: 23%;
     justify-content: space-between;
-    /* border-radius: 20px 0px 0px 20px; */
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
     z-index: 1;
-    /* background-color: #0B1016; */ /* primera opción */
     background-color: #111E31; /* segunda opción */
-    
 }
 
 .ctn-info{
@@ -135,11 +128,8 @@ h3{
     justify-content: center;
     height: 75%;
     border-radius: 8px 8px 0 0;
-    /* border-radius: 8px; */
     overflow: hidden;
     position: relative;
-    /* box-shadow: 0px 0px 20px black; */
-    /* box-shadow: 0px 0px 20px blue; */
 }
 
 .perfil-txt{
@@ -278,7 +268,6 @@ h3{
 .submenu.active{
     transform: scale(1.05);
     box-shadow: 0px 0px 15px #111E31;
-    /* box-shadow: 0px 0px 4px white; */
     background-color: #0B1016;
     transition: all 0.3s ease-in-out;
 }
@@ -381,26 +370,25 @@ h3{
     overflow-y: auto;
 }
 /* MODIFICAMOS EL SCROLLBAR */
-.sub-ctn-ambos::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px; /* Ancho del scrollbar */
 }
-.sub-ctn-ambos::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #1A2C42; /* Color del scrollbar */
     border-radius: 6px; /* Radio de borde del scrollbar */
     cursor: pointer;
 }
 
-.sub-ctn-ambos::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background-color: #111E31; /* Color del scrollbar al pasar el mouse sobre él */
 }
 
-.sub-ctn-ambos::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     /* background-color: white; */ /* Color del fondo del scrollbar */
     border-radius: 6px; /* Radio de borde del scrollbar */
 }
-
-
 /* FIN DE SCROLLBAR */
+
 .sub-ctn-left{
     width: 50%;
     box-sizing: border-box;
@@ -499,7 +487,7 @@ h3{
 }
 .upright-1, .upright-2{
     width: 1px;
-    height: 60%;
+    height: 70%;
     left: 119px;
     margin-top: 5px;
     position: absolute;
@@ -658,6 +646,27 @@ h3{
     overflow: hidden;
 }
 
+.ctn-menu-responsive{
+    box-shadow: 0px 0px 4px #e8eaed;
+    position:absolute;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.svg-close{
+    display: none;
+}
+.ctn-menu-responsive.activo .svg-close{
+    display: flex;
+}
+.ctn-menu-responsive.activo .svg-menu{
+    display: none;
+}
 .item-barra::before {
     content: '';
     position: absolute;
@@ -678,6 +687,7 @@ h3{
       transform: translateX(100%);
     }
   }
+
 
 /* EFECTO GOTEO */
 /* 
