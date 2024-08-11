@@ -23,6 +23,7 @@
         justify-content: start;
         right: 0;
         width: 250px;
+        height: 100%;
         display: none;
     }
     .ctn-menu-responsive{
@@ -36,5 +37,11 @@
     }
     .ctn-submenu{
         height: 55%;
+    }
+    .contenedores{
+        padding: 0;
+    }
+    .ctn-inicio {
+        padding: 15px;
     }
 }
