@@ -12,6 +12,9 @@
     }
 }
 @media only screen and (max-width: 1150px), only screen and (max-height: 720px) {
+    .animated-bg{
+        display: none;
+    }
     .container{
         flex-direction: row-reverse;
         position: relative;
@@ -43,5 +46,38 @@
     }
     .ctn-inicio {
         padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .ctn-subtitle{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 30px;
+    }
+    .sub-ctn-right-datos, .ctn-skills{
+        width: 100%;
+    }
+    .sub-title{
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .sub-ctn-ambos{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ctn-descripcion-datos{
+        width: fit-content;
+    }
+
+    .ctn-right{
+        width: 100%;
+        padding: 0;
+        max-width: 410px;
+        position: static;
     }
 }
