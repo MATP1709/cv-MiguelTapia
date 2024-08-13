@@ -29,8 +29,10 @@
         width: 250px;
         height: 100%;
         display: none;
+        z-index: 99;
     }
     .ctn-menu-responsive{
+        z-index: 100;
         display: flex !important;
         background-color: black;
     }
@@ -88,5 +90,15 @@
     }
     .item-info{
         width: 56%;
+    }
+
+    .p-s{
+        position: -webkit-sticky;
+        position: sticky;
+        top: -2px;
+        background: linear-gradient(to right, #111E31 , #0B1016);/* segunda opción */
+        z-index: 10; /* Para asegurarte de que el título esté encima del contenido */
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd; /* Opcional, solo para separar visualmente */    
     }
 }
