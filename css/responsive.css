@@ -54,8 +54,12 @@
 }
 
 @media only screen and (max-width: 860px){
+    .btns-ap{
+        padding: 25px 0;
+    }
     .ctn-info{
         height: 100%;
+        background: var(--blue-one);
     }
     .ctn-subtitle{
         flex-direction: column;
@@ -76,29 +80,38 @@
         align-items: center;
         gap: 20px;
         padding: 0;
+        height: fit-content;
+        overflow-y: visible;
     }
 
     .ctn-descripcion-datos{
-        width: fit-content;
+        width: 100%;
     }
 
     .ctn-right{
         width: 100%;
         padding: 0;
-        max-width: 410px;
         position: static;
     }
     .item-info{
         width: 56%;
     }
 
-    .p-s{
-        position: -webkit-sticky;
+    .sub-ctn-title{
         position: sticky;
-        top: -2px;
-        background: linear-gradient(to right, #111E31 , #0B1016);/* segunda opción */
+        top: -20px;
+        z-index: 11;
+        background: var(--blue-one);
+    }
+    .p-s{
+        position: sticky;
+        top: 40px;
+        background: var(--blue-one);
         z-index: 10; /* Para asegurarte de que el título esté encima del contenido */
         padding: 10px 0;
         border-bottom: 1px solid #ddd; /* Opcional, solo para separar visualmente */    
+    }
+    .sub-contenedor{
+        overflow-y: auto;
     }
 }

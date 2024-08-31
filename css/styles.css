@@ -25,12 +25,21 @@
     font-style: normal; 
 }
 
+:root {
+    --white: #fff;
+    --white-one: #fff;
+    --white-two: #f1f1e6;
+    --white-three:#f2f9ff;
+    --blue-one: #111e31;
+    --blue-two: #1893fa;
+    --blue-three: #047ae0;
+}
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     font-family: Poppins-Regular;
-    color: #323639;
     font-size: 14px;
 }
 
@@ -43,23 +52,24 @@ body{
 }
 
 h2{
-    color: white;
+    color: var(--white-one);
     font-size: 24px;
     font-family: poppins-bold;
 }
 h3{
-    color: white;
+    color: var(--white-one);
     font-size: 20px;
     font-family: poppins-bold;
 }
 /* ANIMACIÓN DE FONDO */
+
 .animated-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #38424a, #0c161d);
+    background-image: radial-gradient(circle, #38424a, #2d363e, #222b33, #172028, #0c161d);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     z-index: -1;
@@ -85,7 +95,7 @@ h3{
     min-height: 80vh;
     height: 750px;
     border-radius: 20px;
-    background-color: #111E31;
+    background-color: var(--blue-one);
     box-shadow: 0px 0px 10px black;
     overflow: hidden;
 }
@@ -102,16 +112,17 @@ h3{
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
     z-index: 1;
-    background-color: #111E31; /* segunda opción */
+    background-color: var(--blue-one); /* segunda opción */
 }
 
 .ctn-info{
     height: 100%;
     width: 77%;
     border-radius: 0px 20px 20px 0px;
-    /* background: linear-gradient( 90deg, #111E31 25%, #0B1016 73%); */
-    /* background: linear-gradient(to right, #0B1016, #111E31) */ /* primera opción */
-    background: linear-gradient(to right, #111E31 , #0B1016) /* segunda opción */
+    /* background: linear-gradient( 90deg, var(--blue-one) 25%, #0B1016 73%); */
+    /* background: linear-gradient(to right, #0B1016, var(--blue-one)) */ /* primera opción */
+    /* background: linear-gradient(to right, var(--blue-one) , #0B1016); *//* segunda opción */
+    background: linear-gradient(to right, var(--blue-one), #101b2a, #0f1823, #0e141d, #0b1016);
 }
 
 .ctn-img-redes{
@@ -143,7 +154,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white-one);
 }
 
 .ctn-menu-img img{
@@ -168,7 +179,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white-one);
     font-family: poppins-medium;
     padding: 10px;
     
@@ -177,7 +188,7 @@ h3{
 }
 
 .item-redes:hover{
-    background-color:white;
+    background-color:var(--white-one);
     transition: all 0.3s ease-in-out;
     color: #0B1016;
 }
@@ -209,20 +220,20 @@ h3{
     align-items: center;
     padding: 10px;
     border-radius: 30px;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--white-one);
+    color: var(--white-one);
     font-family: poppins-medium;
     transition: all 0.6s ease;
 }
 
 .boton-descargar-cv svg{
-    fill: white;
+    fill: var(--white-one);
     transition: all 0.6s ease;
 }
 
 .boton-descargar-cv:hover{
-    background-color: white;
-    color: #111E31;
+    background-color: var(--white-one);
+    color: var(--blue-one);
     font-family: poppins-bold;
     cursor: pointer;
     transform: scale(1.05);
@@ -238,7 +249,7 @@ h3{
 .ctn-img-txt{
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--white-one);
     gap: 8px;
 }
 .arrow-left{
@@ -255,26 +266,26 @@ h3{
     border-radius: 20px;
     width: 100%;
     gap: 8px;
-    color: white;
+    color: var(--white-one);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 .submenu svg{
     width: 25px;
-    fill: white;
+    fill: var(--white-one);
     transition: all 0.3s ease-in-out;
 }
 
 .submenu.active{
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px #111E31;
+    box-shadow: 0px 0px 15px var(--blue-one);
     background-color: #0B1016;
     transition: all 0.3s ease-in-out;
 }
 
 .arrow-left{
     transition: all 0.3s ease-in-out;
-    fill: white;
+    fill: var(--white-one);
 }
 
 .submenu.active .arrow-left{
@@ -329,7 +340,7 @@ h3{
 
 .ctn-inicio h1{
     font-size: 50px;
-    color: white;
+    color: var(--white-one);
     font-family: poppins-bold;
 }
 
@@ -355,10 +366,10 @@ h3{
     justify-content: space-between;
     /* height: 12%; */
     width: 100%;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted var(--white-one);
     font-size: 40px;
     font-family: poppins-medium;
-    color: white;
+    color: var(--white-one);
 }
 
 .sub-ctn-ambos{
@@ -380,11 +391,11 @@ h3{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #111E31; /* Color del scrollbar al pasar el mouse sobre él */
+    background-color: var(--blue-one); /* Color del scrollbar al pasar el mouse sobre él */
 }
 
 ::-webkit-scrollbar-track {
-    /* background-color: white; */ /* Color del fondo del scrollbar */
+    /* background-color: var(--white-one); */ /* Color del fondo del scrollbar */
     border-radius: 6px; /* Radio de borde del scrollbar */
 }
 /* FIN DE SCROLLBAR */
@@ -401,7 +412,7 @@ h3{
 }
 
 .sub-ctn-left-description{
-    color: white;
+    color: var(--white-one);
     width: 100%;
 }
 
@@ -438,14 +449,14 @@ h3{
     height: fit-content;
 }
 .education-item p{
-    color: white;
+    color: var(--white-one);
 }
 .education-item .item-fecha{
     text-align: end;
 }
 .education-item .btn-descarga{
     font-size: 12px;
-    color: white;
+    color: var(--white-one);
     background-color: #0050ad;
     padding: 2px 20px;
     border-radius: 5px;
@@ -455,7 +466,7 @@ h3{
     transition: all 0.3s ease-in-out;
 }
 .education-item .btn-descarga:hover{
-    background-color: white;
+    background-color: var(--white-one);
     transition: all 0.3s ease-in-out;
 }
 .education-item .btn-descarga:hover svg{
@@ -478,7 +489,7 @@ h3{
     height: 9px;
     background-color: #222;
     border-radius: 50%;
-    border: 2px solid #047ae0;
+    border: 2px solid var(--blue-three);
     z-index: 3;
     box-shadow: 0 0 10px rgba(4, 122, 224, 0.5), 
     0 0 20px rgba(4, 122, 224, 0.3),
@@ -491,7 +502,7 @@ h3{
     left: 119px;
     margin-top: 5px;
     position: absolute;
-    border: 1px solid #047ae0;
+    border: 1px solid var(--blue-three);
     background: black;
     z-index: 1;
     transition: height 0.1s ease-in;
@@ -507,7 +518,7 @@ h3{
 .item-fecha .year-title{
     font-size: 12px;
     font-family: poppins-bold;
-    color: #4A90E2;
+    color: var(--blue-two);
 }
 .item-fecha .year-location{
     font-size: 12px;
@@ -530,7 +541,7 @@ h3{
 .item-info .info-title{
     font-family: poppins-bold;
     font-size: 14px;
-    color: #4A90E2;
+    color: var(--blue-two);
 }
 
 .item-info .info-txt{
@@ -539,7 +550,7 @@ h3{
 }
 .item-info .info-txt span{
     font-family: poppins-medium;
-    color: white;
+    color: var(--white);
     opacity: 0.6;
     font-size: 12px;
 }
@@ -549,22 +560,23 @@ h3{
 .btns-ap{
     display: flex;
     justify-content: center;
+    height: 30px;
     gap: 10px;
-    padding: 5px 0 10px;
+    padding: 10px 0;
 }
 .btn-all,.btn-pro{
     cursor: pointer;
-    color: white;
+    color: var(--white-one);
     padding: 3px 5px;
-    border: 2px solid #047ae0;
+    border: 2px solid var(--blue-three);
     border-radius: 8px;
     z-index: 3;
     opacity: 0.7;
 }
-.btn-all.active,.btn-pro.active{
+.btn-all.active, .btn-pro.active{
     padding: 3px 5px;
     opacity: 1;
-    background-color: #047ae0;
+    background-color: var(--blue-three);
     box-shadow: 0 0 10px rgba(4, 122, 224, 0.5), 0 0 20px rgba(4, 122, 224, 0.3), 0 0 30px rgba(4, 122, 224, 0.2);
 }
 /* fin de  botones all y profesional */
@@ -594,13 +606,13 @@ h3{
     line-height: 16px;
 }
 .datos-personales .dp-txt{
-    color: white !important;
+    color: var(--white-one) !important;
     font-size: 13px;
 }
 .datos-personales .dp-txt span{
     font-family: poppins-bold;
     margin-right:10px;
-    color: #4A90E2;
+    color: var(--blue-two);
     font-size: 13px;
 }
 
@@ -621,14 +633,14 @@ h3{
     justify-content: space-between;
 }
 .skill-item p{
-    color: white;
+    color: var(--white-one);
     font-size: 12px;
 }
 .skill-barra{
     width: 100%;
     height: 10px;
     border-radius: 15px;
-    border: 1px solid #047ae0;
+    border: 1px solid var(--blue-three);
     padding: 2px;
     box-sizing: border-box;
 
@@ -639,7 +651,7 @@ h3{
     height: 100%;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(4, 122, 224, 0.5), 0 0 20px rgba(4, 122, 224, 0.3), 0 0 30px rgba(4, 122, 224, 0.2);
-    background-color: #047ae0;
+    background-color: var(--blue-three);
     transition: all 0.6s ease-in-out;
 
     position: relative;
@@ -699,7 +711,7 @@ h3{
     top: 50%;
     width: 10px;
     height: 10px;
-    background-color: #047ae0;
+    background-color: var(--blue-three);
     border-radius: 50%;
     transform: translateY(-50%);
     opacity: 0;
@@ -777,8 +789,7 @@ h3{
 .nivel-1 li{
     font-size: 12px;
     line-height: 14px;
-    color: white;
+    color: var(--white-one);
     padding-bottom: 5px;
 }
 /* Generales */
-
