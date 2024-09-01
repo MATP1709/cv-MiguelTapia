@@ -3,17 +3,19 @@ function calculateAndSetHeight() {
         var totalHeight = 0;
         var $visibleItems = $(this).find('.education-item:visible');
 
-        // Sumar las alturas de los elementos visibles y añadir 15px por cada elemento
+        // Obtener el valor del gap del contenedor
+        var gap = parseInt($(this).css('gap')) || 0;
+
+        // Sumar las alturas de los elementos visibles y añadir el gap por cada elemento
         $visibleItems.each(function() {
-            totalHeight += $(this).outerHeight(true) + 15; // Incluye la altura más 15px adicionales por elemento
+            totalHeight += $(this).outerHeight(true) + gap; // Incluye la altura más el gap adicional por elemento
         });
 
         // Restar la altura del último item visible
         if ($visibleItems.length > 0) {
-            totalHeight -= $visibleItems.last().outerHeight(true) + 15; // Restar la altura más 15px del último
+            totalHeight -= $visibleItems.last().outerHeight(true) + gap; // Restar la altura más el gap del último
         }
         totalHeight+3;
-
         // Asignar la altura calculada al span correspondiente
         $(this).find('span[class^="upright-"]').height(totalHeight);
     });
