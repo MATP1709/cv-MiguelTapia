@@ -498,20 +498,14 @@ h3{
 }
 .upright-1, .upright-2{
     width: 1px;
-    height: 70%;
     left: 119px;
     margin-top: 5px;
     position: absolute;
     border: 1px solid var(--blue-three);
     background: black;
     z-index: 1;
-    transition: height 0.1s ease-in;
+    transition: height 0.03s ease-in;
 }
-
-.upright-2{
-    height: 60%;
-}
-
 .item-fecha{
     width: 100px;
 }  

@@ -1,3 +1,24 @@
+function calculateAndSetHeight() {
+    $('.ctn-education').each(function() {
+        var totalHeight = 0;
+        var $visibleItems = $(this).find('.education-item:visible');
+
+        // Sumar las alturas de los elementos visibles y añadir 15px por cada elemento
+        $visibleItems.each(function() {
+            totalHeight += $(this).outerHeight(true) + 15; // Incluye la altura más 15px adicionales por elemento
+        });
+
+        // Restar la altura del último item visible
+        if ($visibleItems.length > 0) {
+            totalHeight -= $visibleItems.last().outerHeight(true) + 15; // Restar la altura más 15px del último
+        }
+        totalHeight+3;
+
+        // Asignar la altura calculada al span correspondiente
+        $(this).find('span[class^="upright-"]').height(totalHeight);
+    });
+}
+
 $(document).ready(function() {
     /* MOSTRAMOS NUESTRO CONTENEDOR INCIIAL */
     $("#inicio-content").addClass("activo");
@@ -25,23 +46,35 @@ $(document).ready(function() {
     $('.education-item').css('display', 'none');
     $('.item-profesional').css('display', 'flex');
 
+    
+
+    // Recalcular la altura al redimensionar la ventana
+    $(window).resize(function() {
+        calculateAndSetHeight();
+    });
+
     $('.btns-ap-item').on('click', function() {
         $('.btns-ap-item').removeClass('active');
         $(this).addClass('active');
 
         if ($(this).hasClass('btn-all')) {
             $('.education-item').fadeOut(350, function() {
-                $('.education-item').fadeIn(350);
+                $('.education-item').fadeIn(130, function() {
+                    calculateAndSetHeight(); // Calcular después de que se muestran los elementos
+                });
             });
-            $('.upright-1').css('height', '88%');
-            $('.upright-2').css('height', '91.5%');
         } else if ($(this).hasClass('btn-pro')) {
             $('.education-item').fadeOut(350, function() {
-                $('.item-profesional').fadeIn(350);
+                $('.item-profesional').fadeIn(130, function() {
+                    calculateAndSetHeight(); // Calcular después de que se muestran los elementos
+                });
             });
-            $('.upright-1').css('height', '70%');
-            $('.upright-2').css('height', '60%');
         }
+    });
+
+    $('.submenu-acerca').click(function() { 
+        console.log("entre");
+        calculateAndSetHeight();  
     });
     
     $('.item-profesional').fadeIn(350);
