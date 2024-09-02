@@ -42,7 +42,16 @@ $(document).ready(function() {
         // Agregar la clase activo al div correspondiente al data-content
         $('.contenedores').removeClass('activo'); // Remover clase activo de todos los contenedores
         $('#' + contentId + '-content').addClass('activo'); // Agregar clase activo al div correspondiente
+        // Obtener el ancho y alto actuales de la ventana
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
 
+        // Verificar si se cumple la condición de la media query
+        if (windowWidth <= 1150 || windowHeight <= 720) {
+            // Si se cumple, aplicar las acciones
+            $('.ctn-menu').css('display', 'none');
+            $('.ctn-menu-responsive').removeClass('activo');
+        }
     });
     
     $('.education-item').css('display', 'none');
