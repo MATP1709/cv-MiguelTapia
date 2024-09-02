@@ -55,6 +55,13 @@
     }
 }
 
+@media only screen and (max-width: 900px){
+    .ctn-certificados{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width: 860px){
     .btns-ap{
         padding: 25px 0;
@@ -115,5 +122,15 @@
     }
     .sub-contenedor{
         overflow-y: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .ctn-certificados{
+        padding: 0;
+    }
+    .certificado-item{
+        width: 100%;
+        max-width: 350px;
     }
 }

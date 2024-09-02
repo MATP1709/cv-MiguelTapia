@@ -801,8 +801,10 @@ h3{
 }
 
 .ctn-certificados{
+    box-sizing: border-box;
     display: flex;
-    width: 800px;
+    width: 100%;
+    padding: 0 50px;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
