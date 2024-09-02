@@ -67,7 +67,7 @@
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
     .sub-ctn-right-datos, .ctn-skills,.ctn-datos-personales{
         width: 100%;

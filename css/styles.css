@@ -166,9 +166,9 @@ h3{
 
 .ctn-svg-redes{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: #0B1016;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
@@ -181,8 +181,9 @@ h3{
     align-items: center;
     color: var(--white-one);
     font-family: poppins-medium;
+    box-sizing: border-box;
     padding: 10px;
-    
+    width: 100%;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -236,7 +237,6 @@ h3{
     color: var(--blue-one);
     font-family: poppins-bold;
     cursor: pointer;
-    transform: scale(1.05);
     transition: all 0.6s ease;
 }
 
@@ -585,23 +585,26 @@ h3{
     align-items: center;
     justify-content: center;
 }
+
 .ctn-datos-personales{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .datos-personales{
     display: flex;
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
-    width: 300px;
-    line-height: 16px;
+    justify-content: space-around;
 }
+
 .datos-personales .dp-txt{
     color: var(--white-one) !important;
     font-size: 13px;
 }
+
 .datos-personales .dp-txt span{
     font-family: poppins-bold;
     margin-right:10px;
@@ -786,3 +789,27 @@ h3{
     padding-bottom: 5px;
 }
 /* Generales */
+
+/* CONTENEDOR CERTIFICADOS */
+#certificado-content .sub-ctn-ambos{
+    flex-direction: column;
+}
+
+.ctn-certificados{
+    display: flex;
+    flex-direction: column;
+}
+
+.certificado-item{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border: 1px solid var(--white-two);
+    gap: 1px;
+}
+.certificado-item-img{
+    width: 40%;
+}
+.certificado-item-info{
+    width: 60%;
+}
