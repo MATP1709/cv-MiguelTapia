@@ -457,6 +457,7 @@ h3{
 }
 .education-item .btn-descarga{
     font-size: 12px;
+    width: fit-content;
     color: var(--white-one);
     background-color: #0050ad;
     padding: 2px 20px;
@@ -509,6 +510,10 @@ h3{
 }
 .item-fecha{
     width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2px;
 }  
 .item-fecha .year-title{
     font-size: 12px;
