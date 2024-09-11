@@ -14,6 +14,15 @@
     }
 }
 @media only screen and (max-width: 1150px), only screen and (max-height: 720px) {
+    *{
+        font-size: 12px;
+    }
+    .perfil-txt{
+        font-size: 12px;
+    }
+    .submenu svg{
+        width: 20px;
+    }
     .container{
         flex-direction: row-reverse;
         position: relative;
@@ -42,6 +51,7 @@
         width: 100%;
     }
     .ctn-img-redes{
+        width: 150px;
         height: 30%;
     }
     .ctn-submenu{
