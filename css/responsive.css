@@ -4,7 +4,6 @@
     }
     .container{
         height: 97%;
-        border-radius: 0px;
     }
     .ctn-menu{
         border-radius: 0 20px 20px 0;
@@ -15,13 +14,14 @@
     }
 }
 @media only screen and (max-width: 1150px), only screen and (max-height: 720px) {
-    .ctn-info{
-        border-radius: 0;
-    }
     .container{
         flex-direction: row-reverse;
         position: relative;
         justify-content: center;
+        max-width: 880px;
+    }
+    .ctn-certificados{
+        gap: 20px;
     }
     .ctn-menu {
         border-radius: 0;
