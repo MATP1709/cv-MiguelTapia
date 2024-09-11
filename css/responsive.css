@@ -56,12 +56,14 @@
         justify-content: start;
         gap: 15px;
         right: 0;
-        width: 250px;
+        width: 280px;
         display: none;
         z-index: 99;
     }
     .ctn-menu-responsive{
         z-index: 100;
+        right: 10px;
+        bottom: 10px;
         display: flex !important;
         background-color: black;
     }
@@ -73,7 +75,8 @@
         height: 30%;
     }
     .ctn-submenu{
-        height: 55%;
+        height: 63%;
+        gap: 5px 0;
     }
     .contenedores{
         padding: 0;
