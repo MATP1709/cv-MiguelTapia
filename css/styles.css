@@ -339,6 +339,13 @@ h3{
     
 }
 
+.ctn-inicio h1, .ctn-inicio p {
+    background: url('../img/text.jpg') no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .ctn-inicio h1{
     font-size: 50px;
     color: var(--white-one);
