@@ -91,7 +91,8 @@ h3{
 .container{
     display: flex;
     align-items: center;    
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     min-height: 80vh;
     height: 750px;
     border-radius: 20px;
