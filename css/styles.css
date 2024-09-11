@@ -348,13 +348,14 @@ h3{
 
 .ctn-inicio h1{
     font-size: 50px;
-    color: var(--white-one);
+    /* color: var(--white-one); */
     font-family: poppins-bold;
 }
 
 .ctn-inicio p{
     font-size: 24px;
-    color: #aaa;
+    font-family: poppins-medium;
+    /* color: #aaa; */
 }
 
 .sub-contenedor{
