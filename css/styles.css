@@ -340,10 +340,13 @@ h3{
 }
 
 .ctn-inicio h1, .ctn-inicio p {
-    background: url('../img/text.jpg') no-repeat;
+    position: relative;
+    z-index: 1;
+    font-size: 72px;
+    font-weight: bold;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
 }
 
 .ctn-inicio h1{
@@ -356,6 +359,18 @@ h3{
     font-size: 24px;
     font-family: poppins-medium;
     /* color: #aaa; */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none; /* Para asegurarse de que el video no interfiera con la interacción del usuario */
 }
 
 .sub-contenedor{
