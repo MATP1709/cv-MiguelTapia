@@ -10,12 +10,30 @@
     }
     
     .ctn-skills{
-        gap: 5px;
+        gap: 4px;
     }
 }
 @media only screen and (max-width: 1150px), only screen and (max-height: 720px) {
     *{
         font-size: 12px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .sub-title{
+        font-size: 13px;
+    }
+    .ctn-menu-img img{
+        border-radius: 8px 8px 0 0;
+    }
+    .ctn-skills{
+        padding: 0;
+    }
+    .sub-ctn-ambos{
+        padding: 5px 0 0 0;
     }
     .perfil-txt{
         font-size: 12px;
@@ -55,7 +73,7 @@
         height: 30%;
     }
     .ctn-submenu{
-        height: 58%;
+        height: 55%;
     }
     .contenedores{
         padding: 0;
