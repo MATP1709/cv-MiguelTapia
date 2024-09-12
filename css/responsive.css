@@ -167,9 +167,13 @@
     .ctn-datos,.contact-form{
         width: 100%;
     }
+    #portafolio-content .sub-ctn-ambos{
+        flex-direction: column;
+    }
     #contacto-content .sub-ctn-ambos{
         padding: 20px 0;
         flex-direction: column;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 500px){
