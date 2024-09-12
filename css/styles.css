@@ -874,6 +874,7 @@ h3{
     background-color: #101b2a;
     padding: 0 5px;
     color: var(--blue-two);
+    border-radius: 15px;
     transition: 0.3s;
     pointer-events: none;
 }
@@ -905,7 +906,11 @@ h3{
 #contact-form input:focus, #contact-form textarea:focus{
     outline: none;
     border: 1px solid var(--blue-two);
-    box-shadow: 0 0 10px rgba(4, 122, 224, 0.5), 0 0 20px rgba(4, 122, 224, 0.3), 0 0 30px rgba(4, 122, 224, 0.2);
+    /* box-shadow: 0 0 10px rgba(4, 122, 224, 0.5), 0 0 20px rgba(4, 122, 224, 0.3), 0 0 30px rgba(4, 122, 224, 0.2); */
+    box-shadow: 
+    5px 5px 5px rgba(4, 122, 224, 0.5), 
+    10px 10px 10px rgba(4, 122, 224, 0.3), 
+    15px 15px 15px rgba(4, 122, 224, 0.2); 
 }
 
 #contact-form button{
