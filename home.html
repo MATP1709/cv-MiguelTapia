@@ -915,10 +915,22 @@
             <div class="contact-form">
               <h2>Contactame</h2>
               <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Nombre" required>
-                <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
-                <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-                <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
+                <div class="input-container">
+                  <input type="text" id="name" name="name" placeholder=" " required>
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Correo Electrónico</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="subject" name="subject" placeholder=" " required>
+                    <label for="subject">Asunto</label>
+                </div>
+                <div class="input-container">
+                    <textarea id="message" name="message" placeholder=" " rows="4" required></textarea>
+                    <label for="message">Mensaje</label>
+                </div>
                 <button type="submit">Enviar</button>
               </form>
             </div>          
