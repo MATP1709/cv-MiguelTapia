@@ -870,9 +870,9 @@ h3{
     position: absolute;
     top: 10px;
     left: 15px;
-    background-color: white;
+    background-color: transparent;
     padding: 0 5px;
-    color: #999;
+    color: var(--blue-two);
     transition: 0.3s;
     pointer-events: none;
 }
