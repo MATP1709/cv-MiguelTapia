@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'Poppins-Bold'; /* Nombre que asignas a la fuente */
+    font-family: 'Poppins-Bold'; 
     src: url('../font/Poppins/Poppins-Bold.ttf') format('truetype'),
          url('../font/Poppins/Poppins-BlackItalic.ttf') format('truetype');
     font-weight: bold; 
     font-style: normal; 
   }
 @font-face {
-    font-family: 'Poppins-Medium'; /* Nombre que asignas a la fuente */
+    font-family: 'Poppins-Medium'; 
     src: url('../font/Poppins/Poppins-Medium.ttf') format('truetype'),
          url('../font/Poppins/Poppins-MediumItalic.ttf') format('truetype');
     font-weight: normal; 
     font-style: normal; 
   }
 @font-face {
-    font-family: 'Poppins-Regular'; /* Nombre que asignas a la fuente */
+    font-family: 'Poppins-Regular'; 
     src: url('../font/Poppins/Poppins-Regular.ttf') format('truetype');
     font-weight: normal; 
     font-style: normal; 
 }
 @font-face {
-    font-family: 'Poppins-Light'; /* Nombre que asignas a la fuente */
+    font-family: 'Poppins-Light'; 
     src: url('../font/Poppins/Poppins-Light.ttf') format('truetype');
     font-weight: normal; 
     font-style: normal; 
@@ -44,11 +44,11 @@
 }
 
 body{
-    display: flex;/* lo volvemos flexible */
-    justify-content: center;/* centramos horizontalmente*/
-    align-items: center; /* centramos verticalmente */
-    overflow: hidden;  /* si el objeto hijo que se tenga, es mayor se oculta */
-    height: 100vh;/* para que ocupe el total de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    height: 100vh;
 }
 
 h2{
@@ -105,7 +105,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el padding en el tamaño total */
+    box-sizing: border-box;
     height: 100%;
     padding: 30px 20px;
     width: 23%;
@@ -113,16 +113,13 @@ h3{
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
     z-index: 1;
-    background-color: var(--blue-one); /* segunda opción */
+    background-color: var(--blue-one);
 }
 
 .ctn-info{
     height: 100%;
     width: 77%;
     border-radius: 0px 20px 20px 0px;
-    /* background: linear-gradient( 90deg, var(--blue-one) 25%, #0B1016 73%); */
-    /* background: linear-gradient(to right, #0B1016, var(--blue-one)) */ /* primera opción */
-    /* background: linear-gradient(to right, var(--blue-one) , #0B1016); *//* segunda opción */
     background: linear-gradient(to right, var(--blue-one), #101b2a, #0f1823, #0e141d, #0b1016);
 }
 
@@ -130,7 +127,6 @@ h3{
     height: 40%;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
 }
 
 .ctn-menu-img{
@@ -160,9 +156,7 @@ h3{
 
 .ctn-menu-img img{
     object-fit: cover;
-    height: 100%; /* corregir si es necesario */
-    /* border-radius: 50%; */
-    /* border: 1px solid black; */
+    height: 100%; 
 }
 
 .ctn-svg-redes{
@@ -173,7 +167,6 @@ h3{
     background-color: #0B1016;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
-    /* gap: 5px; */
 }
 
 .item-redes{
@@ -208,8 +201,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el padding en el tamaño total */
-    /* padding: 5% 0px 0px 0px; */
+    box-sizing: border-box; 
     height: 60%;
     width: 180px;
 }
@@ -261,8 +253,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el padding en el tamaño total */
-    /* padding: 5px 5px 5px 10px; */
+    box-sizing: border-box;
     padding: 10px 20px;
     border-radius: 20px;
     width: 100%;
@@ -310,7 +301,7 @@ h3{
 
 .ctn-info > div {
     display: none;
-    transition: opacity 1s ease-in-out; /* Agrega una transición de opacidad */
+    transition: opacity 1s ease-in-out;
 }
 
 .contenedores{
@@ -318,7 +309,7 @@ h3{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    transition: opacity 0.08s ease-in-out; /* Agrega una transición de opacidad */
+    transition: opacity 0.08s ease-in-out;
     box-sizing: border-box;
     padding-left: 20px;
 }
@@ -371,13 +362,10 @@ h3{
 .sub-ctn-title{
     display: flex;
     justify-content: space-between;
-    /* height: 12%; */
     width: 100%;
-    /* border-bottom: 1px dotted var(--white-one); */
     border-bottom: 1px dotted var(--blue-two);
     font-size: 40px;
     font-family: poppins-bold;
-    /* color: var(--white-one); */
     color: var(--blue-two);
     text-shadow:         0 0 10px rgba(4, 122, 224, 0.5),
     0 0 20px rgba(4, 122, 224, 0.3),
@@ -395,21 +383,20 @@ h3{
 }
 /* MODIFICAMOS EL SCROLLBAR */
 ::-webkit-scrollbar {
-    width: 8px; /* Ancho del scrollbar */
+    width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #1A2C42; /* Color del scrollbar */
-    border-radius: 6px; /* Radio de borde del scrollbar */
+    background-color: #1A2C42;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--blue-one); /* Color del scrollbar al pasar el mouse sobre él */
+    background-color: var(--blue-one);
 }
 
 ::-webkit-scrollbar-track {
-    /* background-color: var(--white-one); */ /* Color del fondo del scrollbar */
-    border-radius: 6px; /* Radio de borde del scrollbar */
+    border-radius: 6px; 
 }
 /* FIN DE SCROLLBAR */
 
@@ -445,7 +432,6 @@ h3{
     padding: 0 3px ;
     width: 100%;
     text-align: justify;
-    /* max-width: 465px; */
     color: var(--white);
     font-size: 14px;
     line-height: 20px;
@@ -691,49 +677,6 @@ h3{
 
 
 /* EFECTO GOTEO */
-/* 
-
-.item-barra::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: var(--blue-three);
-    border-radius: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    animation: drip 1.2s ease-in-out infinite;
-    animation-delay: 0.6s;
-  }
-  
-  @keyframes drip {
-    0% {
-      top: 50%;
-      opacity: 0;
-      transform: translateY(-50%) scale(0);
-    }
-    50% {
-      top: 100%;
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-    100% {
-      top: 150%;
-      opacity: 0;
-      transform: translateY(50%) scale(0);
-    }
-  } */
-
-
-/* Fin de  barras */
-
-
-/* fin de lado derecho */
-
-/* FIN DE ACERCA DE MI */
-
 
 
 /* CERTIFICADOS */
@@ -851,6 +794,33 @@ h3{
     opacity: 0.6;
 }
 
+
+/* Portafolio */
+#portafolio-content .ctn-informacion{
+    width: 100%;
+}
+.ctn-portafolio{
+    width: 100%;
+}
+.portafolio-item{
+    width: 300px;
+    height: 240px;
+}
+.portafolio-item .items-img{
+    width: 100%;
+}
+.portafolio-item .items-img img{
+    border-radius: 8px;
+    width: 100%;
+    object-fit: contain;
+}
+.portafolio-item .items-txt{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font: 16px poppins-medium;
+}
+/* fin de Portafolio */
 
 /* CONTACTO */
 #contacto-content .sub-ctn-ambos p{

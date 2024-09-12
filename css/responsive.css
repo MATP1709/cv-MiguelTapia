@@ -163,6 +163,15 @@
     }
 }
 
+@media only screen and (max-width: 600px){
+    .ctn-datos,.contact-form{
+        width: 100%;
+    }
+    #contacto-content .sub-ctn-ambos{
+        padding: 20px 0;
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 500px){
     .ctn-certificados{
         padding: 0;
