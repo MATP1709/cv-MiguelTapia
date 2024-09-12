@@ -8,7 +8,6 @@
   <link rel="icon" href="img/cv.png" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-  <script src="js/jquery-3.7.1.js"></script>
   <title>CV - Miguel Angel Tapia Pérez</title>
 </head>
 
@@ -121,10 +120,6 @@
 
       <div class="contenedores" id="inicio-content">
         <div class="ctn-inicio">
-          <video class="video-background" autoplay muted loop>
-            <source src="video/video-txt.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-          </video>
           <h1>Miguel Tapia</h1>
           <p>Front End Developer</p>
         </div>
@@ -895,7 +890,7 @@
                   </svg>
                 </div>
                 <div class="datos-item-txt">
-                  migueltapia1722@gmail.com
+                  tapiavirgo44@gmail.com
                 </div>
               </div>
 
@@ -916,6 +911,7 @@
               <form id="contact-form">
                 <input type="text" id="name" name="name" placeholder="Nombre" required>
                 <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+                <input type="text" id="subject" name="subject" placeholder="Asunto" required>
                 <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
                 <button type="submit">Enviar</button>
               </form>
@@ -934,8 +930,9 @@
       </svg>
     </div>
   </div>
-
+  <script src="js/jquery-3.7.1.js"></script>
   <script src="js/javascript.js"></script>
+  <script src="js/email.js"></script>
 </body>
 
 </html>
