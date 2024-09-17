@@ -133,6 +133,10 @@
         height: fit-content;
         overflow-y: visible;
     }
+    #portafolio-content .sub-ctn-ambos{
+        flex-direction: column;
+        height: 100%;
+    }
     .ctn-descripcion-datos{
         width: 100%;
     }
@@ -174,6 +178,10 @@
         padding: 20px 0;
         flex-direction: column;
         align-items: center;
+    }
+    .container {
+        height: 100%;
+        border-radius: 0;
     }
 }
 @media only screen and (max-width: 500px){
